@@ -9,11 +9,11 @@ import sys
 from datetime import datetime
 from collections import defaultdict
 
-TOKEN = 'тут токен' #тут токен от группы вставь его в кавычках
-GROUP_ID = 0000000000 #тут айди группы, просто замени
-OWNER_IDS = [ ] #тут вставь свой айди от вк цифрами, это типо как создатель, котррому доступны все функции
+TOKEN = 'vk1.a.894nimrkhbXd3tC40fOpgUNAxGoZNU8SBMsww_DMuN0XrtW0ERF-F2KngkVo14Opc7iUwNoTYIdBli0umW9KJefC33UvnzYbph6x6hgvYUmZzOBGpR1Z2MVk9BKhwanvvu6Z8VNVzhDaR0r4opitrxg_d32M7HWJ0NCU7Df4c9dBSsr-T0_g2GAfo2RMfN7zlRTvpbY6T8oQRmh-ysMGwA'
+GROUP_ID = 239087466
+OWNER_IDS = [1116380571]
 
-#далее снизу ниче не трогай, это на хосте или сервере создаются файлы с базой данных
+
 CHATS_FILE = "chats.txt"
 STATS_FILE = "stats.json"
 LOG_FILE = "bot_log.txt"
@@ -841,4 +841,3 @@ except Exception as e:
     log_action("critical_error", "❌", str(e))
     save_backup()
     
-#если че в коде уже можешь сам менять что нужно, удачи b.y: karp1k
